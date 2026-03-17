@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatientFirst - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+    <div class="sidebar">
+        <div class="brand">
+            <h2><i class="fa-solid fa-staff-snake"></i> PatientFirst</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-pills"></i> Inventory</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Overview</h1>
+            <div class="user-profile">
+                <i class="fa-solid fa-user-doctor"></i> Admin User
+            </div>
+        </header>
+
+        <div class="alert-marquee">
+            <marquee behavior="scroll" direction="left" scrollamount="6">
+                <span class="urgent-alert"><i class="fa-solid fa-circle-exclamation"></i> ALERT: Paracetamol Batch #B001 expires in 15 days!</span>
+                <span class="warning-alert"><i class="fa-solid fa-triangle-exclamation"></i> WARNING: Amoxicillin stock is low.</span>
+            </marquee>
+        </div>
+
+        <div class="dashboard-cards">
+            <div class="card glass-effect">
+                <h3>Total Medicines</h3>
+                <p class="number">1,245</p>
+            </div>
+            <div class="card glass-effect">
+                <h3>Low Stock Alerts</h3>
+                <p class="number text-warning">18</p>
+            </div>
+            <div class="card glass-effect">
+                <h3>Expiring Soon</h3>
+                <p class="number text-danger">7</p>
+            </div>
+        </div>
+
+        <div class="carousel-container glass-effect">
+            <h2>Featured Medicine Stock</h2>
+            <div class="carousel">
+                <div class="carousel-item"><h3>Aspirin 500mg</h3><p>Stock: 450</p></div>
+                <div class="carousel-item"><h3>Ibuprofen</h3><p>Stock: 200</p></div>
+                <div class="carousel-item"><h3>Amoxicillin</h3><p>Stock: 12</p></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
